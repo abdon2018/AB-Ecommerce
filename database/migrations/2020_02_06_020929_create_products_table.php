@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('slug');
             $table->text('description');
             $table->string('extract', 300);
-            $table->decimal('price', 5, 2);
+            $table->decimal('price', 8, 2);
             $table->string('image', 300);
             $table->boolean('visible');
             $table->unsignedBigInteger('category_id');
